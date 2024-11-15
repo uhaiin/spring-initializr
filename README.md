@@ -1,1 +1,1 @@
-# LICENSE
+# spring initializr
