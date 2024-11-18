@@ -42,7 +42,8 @@ public class PackResponseBodyAdvice implements ResponseBodyAdvice<Object> {
 	public Object beforeBodyWrite(Object body, MethodParameter returnType, MediaType selectedContentType,
 			Class<? extends HttpMessageConverter<?>> selectedConverterType, ServerHttpRequest request,
 			ServerHttpResponse response) {
-		if (body instanceof String str) {
+		if (body instanceof String) {
+			String str = (String) body;
 			// 最终保证返回的数据结构还是一致的
 			ObjectMapper objectMapper = new ObjectMapper();
 			try {

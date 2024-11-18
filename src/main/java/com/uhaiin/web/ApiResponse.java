@@ -1,18 +1,16 @@
 package com.uhaiin.web;
 
-import java.io.Serial;
-import java.io.Serializable;
-
 import com.uhaiin.enums.ApiResponseEnum;
-
 import lombok.Getter;
 import lombok.Setter;
+
+import java.io.Serializable;
 
 @Getter
 @Setter
 public class ApiResponse<T> implements Serializable {
 
-	@Serial
+
 	private static final long serialVersionUID = 1L;
 
 	protected boolean success = true;
