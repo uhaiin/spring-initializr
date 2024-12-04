@@ -11,9 +11,9 @@
 	<property name="log.path" value="data/logs/${application}/${port}" />
 	<define name="hostname" class="ch.qos.logback.core.property.CanonicalHostNamePropertyDefiner" />
 	<property name="CONSOLE_LOG_PATTERN"
-		value="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%thread] [%highlight(%-5level)] [${hostname}/${port}] [%cyan(%logger{50})] [%msg]%n" />
+		value="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%thread] [%highlight(%-5level)] [${hostname}:${port}] [%cyan(%logger{50})] [%msg]%n" />
 	<property name="FILE_LOG_PATTERN"
-		value="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%thread] [%-5level] [${hostname}/${port}] [%logger{50}] [%msg]%n" />
+		value="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%thread] [%-5level] [${hostname}:${port}] [%logger{50}] [%msg]%n" />
 	<!--输出到控制台 -->
 	<appender name="STDOUT"
 		class="ch.qos.logback.core.ConsoleAppender">
